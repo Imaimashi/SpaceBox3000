@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveScript : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
     [SerializeField] public float speed = 0; // скорость
   
