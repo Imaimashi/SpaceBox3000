@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveA : MonoBehaviour
+public class Gravity : MonoBehaviour
 {
     private HashSet<Rigidbody> affectedBodies = new HashSet<Rigidbody>();
     private Rigidbody componentRigidbody;
