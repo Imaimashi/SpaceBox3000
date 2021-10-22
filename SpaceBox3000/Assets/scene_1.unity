@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &204461984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 476070434101606542, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606543, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_Name
+      value: SampleSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 289.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 269.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476070434101606642, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
 --- !u!1 &635132111
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,10 +389,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ed325b020fdf84d89e4643de08136c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects:
-  - {fileID: 4840443829374117095, guid: ad0d6a65594f17942af0574445b3fdd9, type: 3}
-  - {fileID: 476070434101606543, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
-  - {fileID: 8093853855356057544, guid: 7495f2b7ce8ee1f47a657e56688add75, type: 3}
+  newsph: {fileID: 2107676561}
+  X: -10
+  Z: 0
+  Scale: 2
+  Mass: 4
 --- !u!114 &1342711982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +665,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!54 &2107676561 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 476070434101606542, guid: 5e1a78db8926c634cabaf66203b23063, type: 3}
+  m_PrefabInstance: {fileID: 204461984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &476070435121899697
 PrefabInstance:
   m_ObjectHideFlags: 0

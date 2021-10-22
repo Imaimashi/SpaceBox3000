@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class CreateObject : MonoBehaviour
 {
-    public GameObject[] objects;
+    public Rigidbody newsph;
     private int hasobj;
+    public float X;
+    public float Z;
+    public float Scale;
+    public float Mass;
+
+    void Awake()
+    {
+        
+    }
 
     void Start()
     {
@@ -14,6 +23,8 @@ public class CreateObject : MonoBehaviour
 
     void Update()
     {
+        newsph.transform.localScale = new Vector3(Scale, Scale, Scale);
+        newsph.mass = Mass;
         if (Input.GetKey(KeyCode.C) && hasobj != 1)
         {
             StartCoroutine(instobj());
@@ -23,8 +34,8 @@ public class CreateObject : MonoBehaviour
 
     IEnumerator instobj()
     {
-        Instantiate(objects[2], new Vector3(0, 0, 0), Quaternion.identity);
-        yield return new WaitForSeconds(2.0f);
+        Instantiate(newsph, new Vector3(X, 0, Z), Quaternion.identity);
+        yield return new WaitForSeconds(1.0f);
         hasobj = 0;
     }
 }
