@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class SpeedUpTime : MonoBehaviour
 {
-    private float _movementSpeed = 1f;
-
-    public float scaleOfTime = 1f;
+    public float scale;
 
     // Start is called before the first frame update
     void Start()
@@ -17,16 +15,13 @@ public class SpeedUpTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(new Vector3(_movementSpeed, 0, 0) * Time.deltaTime);
-
-            if (transform.position.x > 10f || transform.position.x < -10f)
-            {
-                _movementSpeed = -_movementSpeed;
-            }
-
-            Time.timeScale = scaleOfTime;
+            Time.timeScale = scale;
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
         }
     }
 }
