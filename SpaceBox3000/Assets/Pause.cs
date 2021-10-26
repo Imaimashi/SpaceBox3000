@@ -4,30 +4,27 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    private int stop;
-
-    void Start()
-    {
-        stop = 0;
-    }
+    public float timer;
+    private bool ispause;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.P) && stop == 0)
+        Time.timeScale = timer;
+        if (Input.GetKeyDown(KeyCode.P) && ispause == false)
         {
-            StartCoroutine(waiting());
+            ispause = true;
         }
-        if (Input.GetKey(KeyCode.P) && stop == 1)
+        else if (Input.GetKeyDown(KeyCode.P) && ispause == true)
         {
-            Time.timeScale = 1.0f;
-            stop = 0;
+            ispause = false;
         }
-    }
-
-    IEnumerator waiting()
-    {
-        Time.timeScale = 0;
-        yield return new WaitForSeconds(1.0f);
-        stop = 1;
+        if (ispause == true)
+        {
+            timer = 0;
+        }
+        else if (ispause == false)
+        {
+            timer = 1f;
+        }
     }
 }
