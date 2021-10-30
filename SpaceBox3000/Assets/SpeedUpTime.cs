@@ -5,23 +5,22 @@ using UnityEngine;
 public class SpeedUpTime : MonoBehaviour
 {
     public float scale;
+    public float timer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.Z))
         {
-            Time.timeScale = scale;
+            timer = scale;
         }
         else
         {
-            Time.timeScale = 1.0f;
+            timer = 1.0f;
+        }
+
+        if (Input.GetKey(KeyCode.Z) && Time.timeScale != 0)
+        {
+            Time.timeScale = timer;
         }
     }
 }
