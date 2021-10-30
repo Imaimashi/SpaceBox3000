@@ -1,26 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpeedUpTime : MonoBehaviour
 {
     public float scale;
-    public float timer;
+    private float counter;
 
-    void Update()
+    public void Start()
     {
-        if (Input.GetKey(KeyCode.Z))
+        counter = 0;
+    }
+
+    public void Work()
+    {
+        if (counter == 0)
         {
-            timer = scale;
+            Time.timeScale = 1.0f;
         }
+
+        if (counter == 1)
+        {
+            Time.timeScale = scale;
+        }
+    }
+
+    public void Accel()
+    {
+        if (counter == 1)
+        {
+            counter = 0;
+        }
+
         else
         {
-            timer = 1.0f;
-        }
-
-        if (Input.GetKey(KeyCode.Z) && Time.timeScale != 0)
-        {
-            Time.timeScale = timer;
+            counter = 1;
         }
     }
 }
