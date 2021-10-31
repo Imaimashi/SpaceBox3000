@@ -7,34 +7,46 @@ public class CreateObject : MonoBehaviour
 {
     public Rigidbody newsph;
     private int hasobj;
-    private float X;
-    private float Z;
-    private float Scale;
-    private float Mass;
+    public float X;
+    public float Z;
+    public float Scale;
+    public float Mass;
 
     void Start()
     {
         hasobj = 0;
     }
 
-    public void CreateObj()
+    public void Find1()
     {
-        GameObject go = GameObject.Find("xPos");
+        GameObject go = GameObject.Find("xPos"); GameObject.Find("zPos"); GameObject.Find("Scale"); GameObject.Find("Mass");
         XCreation xcreation = go.GetComponent<XCreation>();
         X = xcreation.X;
+    }
 
-        GameObject.Find("zPos");
+    public void Find2()
+    {
+        GameObject go = GameObject.Find("zPos");
         ZCreation zcreation = go.GetComponent<ZCreation>();
         Z = zcreation.Z;
+    }
 
-        GameObject.Find("Scale");
+    public void Find3()
+    {
+        GameObject go = GameObject.Find("Scale");
         ScaleCreation scalecreation = go.GetComponent<ScaleCreation>();
         Scale = scalecreation.Scale;
+    }
 
-        GameObject.Find("Mass");
+    public void Find4()
+    {
+        GameObject go = GameObject.Find("Mass");
         MassCreation masscreation = go.GetComponent<MassCreation>();
         Mass = masscreation.Mass;
+    }
 
+    public void CreateObj()
+    {
         newsph.transform.localScale = new Vector3(Scale, Scale, Scale);
         newsph.mass = Mass;
         if (hasobj != 1)
