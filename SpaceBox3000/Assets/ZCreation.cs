@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class ZCreation : MonoBehaviour
 {
-    private Text myText;
-    public static string Zl;
+    public Text Zl;
     public float Z;
-
-    void Start()
-    {
-        myText = GetComponent<Text>();
-    }
+    public InputField TargetField;
 
     public void Zpos()
     {
-        Zl = myText.text.ToString();
-        Z = float.Parse(Zl);
+        Zl = TargetField.textComponent;
+        Z = float.Parse(Zl.text);
     }
 }

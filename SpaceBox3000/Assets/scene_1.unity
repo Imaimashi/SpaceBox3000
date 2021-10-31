@@ -754,7 +754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4942175de881c479a967d9372f332859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Xl: {fileID: 459582689}
   X: 0
+  TargetField: {fileID: 607251912}
 --- !u!1 &722240648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,7 +1689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0839e422617434f278f05048e3fb6e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scalel: {fileID: 1072678361}
   Scale: 0
+  TargetField: {fileID: 1552763624}
 --- !u!1 &1618060742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1768,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1963,7 +1967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef7676591b254ad18947531c403953f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zl: {fileID: 189816776}
   Z: 0
+  TargetField: {fileID: 1725039945}
 --- !u!1 &1764226010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,7 +2845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30beb87342c3641bb910d2b1daf28a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Massl: {fileID: 1785607677}
   Mass: 0
+  TargetField: {fileID: 2070754031}
 --- !u!1 &2107347099
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class MassCreation : MonoBehaviour
 {
-    private Text myText;
-    public static string Massl;
+    public Text Massl;
     public float Mass;
-
-    void Start()
-    {
-        myText = GetComponent<Text>();
-    }
+    public InputField TargetField;
 
     public void Masspos()
     {
-        Massl = myText.text.ToString();
-        Mass = float.Parse(Massl);
+        Massl = TargetField.textComponent;
+        Mass = float.Parse (Massl.text);
     }
 }

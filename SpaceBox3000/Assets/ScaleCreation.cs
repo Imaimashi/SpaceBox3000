@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class ScaleCreation : MonoBehaviour
 {
-    private Text myText;
-    public static string Scalel;
+    public Text Scalel;
     public float Scale;
-
-    void Start()
-    {
-        myText = GetComponent<Text>();
-    }
+    public InputField TargetField;
 
     public void Scalepos()
     {
-        Scalel = myText.text.ToString();
-        Scale = float.Parse(Scalel);
+        Scalel = TargetField.textComponent;
+        Scale = float.Parse(Scalel.text);
     }
 }

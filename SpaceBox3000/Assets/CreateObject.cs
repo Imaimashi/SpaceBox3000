@@ -15,7 +15,10 @@ public class CreateObject : MonoBehaviour
     void Start()
     {
         hasobj = 0;
+    }
 
+    public void CreateObj()
+    {
         GameObject go = GameObject.Find("xPos");
         XCreation xcreation = go.GetComponent<XCreation>();
         X = xcreation.X;
@@ -32,10 +35,6 @@ public class CreateObject : MonoBehaviour
         MassCreation masscreation = go.GetComponent<MassCreation>();
         Mass = masscreation.Mass;
 
-    }
-
-    public void CreateObj()
-    {
         newsph.transform.localScale = new Vector3(Scale, Scale, Scale);
         newsph.mass = Mass;
         if (hasobj != 1)

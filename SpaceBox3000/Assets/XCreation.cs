@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class XCreation : MonoBehaviour
 {
-    private Text myText;
-    public static string Xl;
+    public Text Xl;
     public float X;
-
-    void Start()
-    {
-        myText = GetComponent<Text>();
-    }
+    public InputField TargetField;
 
     public void Xpos()
     {
-        Xl = myText.text.ToString();
-        X = float.Parse(Xl);
+        Xl = TargetField.textComponent;
+        X = float.Parse(Xl.text);
     }
 }
