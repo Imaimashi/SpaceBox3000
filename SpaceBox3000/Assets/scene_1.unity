@@ -796,6 +796,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tripod: {fileID: 0}
   speed: 0.3
+--- !u!1 &918856969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8093853855356057544, guid: 7495f2b7ce8ee1f47a657e56688add75, type: 3}
+  m_PrefabInstance: {fileID: 8093853854867014262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &918856970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918856969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c2689a32a5f5c498b1a6b6b68abdc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072678359
 GameObject:
   m_ObjectHideFlags: 0
