@@ -19,7 +19,7 @@ public class CreateObject : MonoBehaviour
 
     public void Find1()
     {
-        GameObject go = GameObject.Find("xPos"); GameObject.Find("zPos"); GameObject.Find("Scale"); GameObject.Find("Mass");
+        GameObject go = GameObject.Find("xPos");
         XCreation xcreation = go.GetComponent<XCreation>();
         X = xcreation.X;
     }
