@@ -17,13 +17,25 @@ public class Delete : MonoBehaviour
         {
             if (counter == 0)
             {
-                counter = 1;
+                StartCoroutine(On());
             }
             else
             {
-                counter = 0;
+                StartCoroutine(Off());
             }
         }
+    }
+
+    IEnumerator On()
+    {
+        yield return new WaitForSeconds(0.3f);
+        counter = 1;
+    }
+
+    IEnumerator Off()
+    {
+        yield return new WaitForSeconds(0.3f);
+        counter = 0;
     }
 
     private void OnMouseDown()
