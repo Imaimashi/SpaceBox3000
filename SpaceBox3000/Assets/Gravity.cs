@@ -13,7 +13,7 @@ public class Gravity : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.attachedRigidbody != null)
+        if (other && other.attachedRigidbody != null)
         {
             affectedBodies.Add(other.attachedRigidbody);
         }
@@ -21,7 +21,7 @@ public class Gravity : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.attachedRigidbody != null)
+        if (other && other.attachedRigidbody != null)
         {
             affectedBodies.Remove(other.attachedRigidbody);
         }

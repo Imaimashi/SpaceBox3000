@@ -17,13 +17,13 @@ public class Scale : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Scope -= 1;
+            Scope += 50;
             scaleText.text = Mathf.Round(Scope).ToString();
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Scope += 1;
+            Scope -= 50;
             scaleText.text = Mathf.Round(Scope).ToString();
         }
     }
