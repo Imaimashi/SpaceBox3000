@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Scale : MonoBehaviour
 {
     public float Scope = 5000;
+    public float Count = 5000;
     public Text scaleText;
 
     void Start()
@@ -17,13 +18,35 @@ public class Scale : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Scope += 50;
-            scaleText.text = Mathf.Round(Scope).ToString();
+            if (Count >= 0)
+            {
+                Scope += 50;
+                Count += 50;
+                scaleText.text = Mathf.Round(Scope).ToString();
+            }
+            else
+            {
+                Count += 50;
+            }
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Scope -= 50;
+            if (Scope < 0)
+            {
+                Count -= 50;
+            }
+            else
+            {
+                Scope -= 50;
+                Count -= 50;
+                scaleText.text = Mathf.Round(Scope).ToString();
+            }
+        }
+
+        if (Scope < 0)
+        {
+            Scope = 0;
             scaleText.text = Mathf.Round(Scope).ToString();
         }
     }
