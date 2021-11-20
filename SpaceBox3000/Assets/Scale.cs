@@ -20,13 +20,13 @@ public class Scale : MonoBehaviour
         {
             if (Count >= 0)
             {
-                Scope += 10;
-                Count += 10;
+                Scope = Scope*1001/1000;
+                Count = Count*1001/1000;
                 scaleText.text = Mathf.Round(Scope).ToString();
             }
             else
             {
-                Count += 10;
+                Count = Count*11/10;
             }
         }
 
@@ -34,12 +34,12 @@ public class Scale : MonoBehaviour
         {
             if (Scope < 0)
             {
-                Count -= 10;
+                Count = Count*1000/1001;
             }
             else
             {
-                Scope -= 10;
-                Count -= 10;
+                Scope = Scope*1000/1001;
+                Count = Count*1000/1001;
                 scaleText.text = Mathf.Round(Scope).ToString();
             }
         }
