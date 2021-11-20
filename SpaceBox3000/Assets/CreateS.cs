@@ -12,6 +12,13 @@ public class CreateS : MonoBehaviour
     public Rigidbody newsph5;
     public Rigidbody newsph6;
     public Rigidbody newsph7;
+    public Material O;
+    public Material B;
+    public Material A;
+    public Material F;
+    public Material G;
+    public Material K;
+    public Material M;
     private int hasobj;
     public float X;
     public float Z;
@@ -71,6 +78,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 30000)
         {
+
+            newsph1.GetComponent<Renderer>().material = O;
+
             newsph1.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph1.mass = Mass;
             if (hasobj != 1)
@@ -92,6 +102,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 10000 && Temp <= 30000)
         {
+
+            newsph2.GetComponent<Renderer>().material = B;
+
             newsph2.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph2.mass = Mass;
             if (hasobj != 1)
@@ -113,6 +126,8 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 7400 && Temp <= 10000)
         {
+
+            newsph3.GetComponent<Renderer>().material = A;
             newsph3.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph3.mass = Mass;
             if (hasobj != 1)
@@ -134,6 +149,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 6000 && Temp <= 7400)
         {
+
+            newsph4.GetComponent<Renderer>().material = F;
+
             newsph4.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph4.mass = Mass;
             if (hasobj != 1)
@@ -155,6 +173,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 5000 && Temp <= 6000)
         {
+
+            newsph5.GetComponent<Renderer>().material = G;
+
             newsph5.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph5.mass = Mass;
             if (hasobj != 1)
@@ -176,6 +197,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 3800 && Temp <= 5000)
         {
+
+            newsph6.GetComponent<Renderer>().material = K;
+
             newsph6.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph6.mass = Mass;
             if (hasobj != 1)
@@ -197,6 +221,9 @@ public class CreateS : MonoBehaviour
     {
         if (Temp > 2499 && Temp <= 3800)
         {
+
+            newsph1.GetComponent<Renderer>().material = M;
+
             newsph7.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph7.mass = Mass;
             if (hasobj != 1)
