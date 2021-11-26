@@ -12,6 +12,7 @@ public class CreateS : MonoBehaviour
     public Rigidbody newsph5;
     public Rigidbody newsph6;
     public Rigidbody newsph7;
+    public GameObject lighting;
     public Material O;
     public Material B;
     public Material A;
@@ -80,6 +81,7 @@ public class CreateS : MonoBehaviour
         {
 
             newsph1.GetComponent<Renderer>().material = O;
+            newsph1.GetComponent<Light>().color = new Color(29, 90, 255);
 
             newsph1.transform.localScale = new Vector3(Scale, Scale, Scale);
             newsph1.mass = Mass;
