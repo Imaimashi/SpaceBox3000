@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Scale : MonoBehaviour
 {
-    public float Scope = 5000;
-    public float Count = 5000;
+    public float Scope = 1000000;
+    public float Count = 1000000;
     public Text scaleText;
 
     void Start()
