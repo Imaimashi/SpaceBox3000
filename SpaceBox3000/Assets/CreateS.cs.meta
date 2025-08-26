@@ -3,7 +3,22 @@ guid: fc8b282087bf5e5418bfe73ed95b3cd8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - newsph1: {instanceID: 0}
+  - newsph2: {instanceID: 0}
+  - newsph3: {instanceID: 0}
+  - newsph4: {instanceID: 0}
+  - newsph5: {instanceID: 0}
+  - newsph6: {instanceID: 0}
+  - newsph7: {instanceID: 0}
+  - lighting: {fileID: 8791415357899223642, guid: 54a9874d836a6f247952d171d1dec048, type: 3}
+  - O: {fileID: 2100000, guid: 15895c338bf7fed4a8df7aebd3893562, type: 2}
+  - B: {fileID: 2100000, guid: 6fcaf20db941005499feadeae97b114c, type: 2}
+  - A: {fileID: 2100000, guid: b283bd3cbc9e3ed499698c2b5655181d, type: 2}
+  - F: {fileID: 2100000, guid: dceac2f2d8e1fe741bbb02ad03e14956, type: 2}
+  - G: {fileID: 2100000, guid: 80e76cf9bfbfb0c4b998277c019e0f67, type: 2}
+  - K: {fileID: 2100000, guid: a28f4c6351391f648af5a0081ceec4d3, type: 2}
+  - M: {fileID: 2100000, guid: b91fcd240b998e241955d32a607a5fcb, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
